@@ -1,0 +1,8 @@
+# input: number of ticks in a song. each spin has the metronome produce 4 ticks
+# output: how many spins must he do for the metronome to stop at the same time he does?
+
+
+song_length = int(input())
+spins = float(song_length / 4)
+
+print(spins)
