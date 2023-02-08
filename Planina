@@ -1,0 +1,15 @@
+import sys
+
+def main():
+    line = sys.stdin.readline()
+    line = line.strip()
+    n = int(line)
+
+    # 2 circles in the smallest square
+    s = 2
+    for i in range(n):
+        s = s + (s - 1)
+    print(s * s)
+
+if __name__ == "__main__":
+    main()
