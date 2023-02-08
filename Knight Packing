@@ -1,0 +1,10 @@
+# input: chess board is n x n, knight can only be placed if there is no other knight
+# output: which of the two players win?
+
+
+board_size = int(input())
+
+if board_size % 2 == 0:
+    print('second')
+else:
+    print('first')
