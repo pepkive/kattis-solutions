@@ -1,0 +1,5 @@
+# input: N, the number of contestants, and P, the number of problems solved followed by two irrelevant additional lines of info about the teams
+# output: print the number of problems solved only
+
+N, P = map(int, input().split())
+print(P)
