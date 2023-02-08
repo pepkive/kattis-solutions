@@ -1,0 +1,8 @@
+# input: an initial "hey" with varying amounts of "e"s
+# output: respond with a "hey" with double the amount of "e"s than given
+
+initial = input()
+
+e_num = initial[1:len(initial)-1]
+
+print('h', e_num, e_num, 'y', sep='')
