@@ -1,0 +1,10 @@
+# Input: number of stones, x. if the number of stones is odd, Alice wins and vice versa.
+# Output: Who wins?
+
+
+x = int(input())
+
+if x % 2 == 0:
+    print('Bob')
+else:
+    print('Alice')
