@@ -1,0 +1,24 @@
+import sys
+
+def main():
+    # read the number of lines of input
+    line = sys.stdin.readline()
+    # get rid of end of line character
+    line = line.strip()
+    # convert line into integer
+    n = int(line)
+
+    sum_n = 0
+    for i in range(n):
+        line = sys.stdin.readline()
+        line = line.strip()
+        num = int(line)
+        x = num % 10
+        # a is last integer
+        a = num // 10
+        sum_n += a ** x
+
+    print(sum_n)
+
+if __name__ == "__main__":
+    main()
