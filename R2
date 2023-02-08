@@ -1,0 +1,15 @@
+# input: we are only given r1 and s
+# output: given the mean of s is (r1 + r2) / 2, what is the value of r2?
+
+
+line = input()
+
+r1, s = line.split()
+
+r1 = int(r1)
+s = int(s)
+r2 = 0
+
+r2 = (s * 2) - r1
+
+print(r2)
