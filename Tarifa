@@ -1,0 +1,12 @@
+x = int(input())
+n = int(input())
+i = 0
+total = 0
+
+while i < n:
+    monthly_use = int(input())
+    total += x - monthly_use
+    i += 1
+
+total += x
+print(total)
