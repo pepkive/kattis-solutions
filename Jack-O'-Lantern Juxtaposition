@@ -1,0 +1,11 @@
+# input: the number of eye designs (n), nose designs (t), and mouth designs (m)
+# output: how many unique jack-o-lantern design combinations can you create?
+
+line = input()
+n, t, m = line.split()
+
+n = int(n)
+t = int(t)
+m = int(m)
+
+print(n*t*m)
