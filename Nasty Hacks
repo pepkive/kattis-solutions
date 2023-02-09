@@ -1,0 +1,20 @@
+# input: n cases, 3 rows of r (revenue if no advertising) & e (revenue if you do advertise) & c (cost of advertising)
+# output: "advertise" if it is profitable and vice versa
+
+import sys
+num = (sys.stdin.readline()).strip()
+num = int(num)
+
+for i in range(num):
+    line1 = (sys.stdin.readline()).strip()
+    r, e, c = line1.split()
+    r = int(r)
+    e= int(e)
+    c = int(c)
+
+    if r < (e - c):
+        print('advertise')
+    elif r == (e - c):
+        print('does not matter')
+    else:
+        print('do not advertise')
