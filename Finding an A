@@ -1,0 +1,9 @@
+# input: string composed of lowercase letters with the letter "a" somewhere in it
+# output: suffix of the string that begins with the first occurance of s
+
+word = input()
+
+first_a = word.index('a')
+res = word[first_a:]
+
+print(res)
