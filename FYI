@@ -1,0 +1,12 @@
+# input: telephone number
+# output: 1 if should be routed (if it starts with 555), 0 if not
+
+phone_num = str(input())
+
+for i in range(len(phone_num)):
+  if phone_num[0:3] == '555':
+    print('1')
+    break
+  else:
+    print('0')
+    break
