@@ -1,0 +1,9 @@
+# input: 2 digit code
+# output: 2 digit code, swapped
+
+import sys
+
+line = sys.stdin.readline()
+line = line.strip()
+
+print(line[1], line[0], sep='')
