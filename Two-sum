@@ -1,0 +1,10 @@
+# input: two integers on the same line
+# output: the sum of the two integers
+
+import sys
+
+num_1, num_2 = (sys.stdin.readline()).split()
+num_1 = int(num_1)
+num_2 = int(num_2)
+
+print(num_1 + num_2)
