@@ -1,0 +1,18 @@
+# input: the number of days the temperature was collected
+# output: single integer of the number of days that were below zero
+
+import sys
+
+num = sys.stdin.readline()
+num = int(num)
+
+temps = (sys.stdin.readline()).split()
+freeze = 0
+
+for i in temps:
+    if int(i) < 0:
+        freeze += 1
+    else:
+        pass
+
+print(freeze)
