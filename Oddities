@@ -1,0 +1,15 @@
+# input: an integer of the number od test cases, then single integers to test
+# outout: "[integer] is even" if even and "[integer] is odd" if odd
+
+import sys
+
+test_num = sys.stdin.readline()
+test_num = int(test_num)
+
+for i in range(test_num):
+  num = sys.stdin.readline()
+  num = int(num)
+  if num % 2 == 0:
+    print(num,'is even')
+  else:
+    print(num,'is odd')
