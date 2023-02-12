@@ -1,0 +1,9 @@
+# input: a string
+# output: the same string repeated 3 times
+
+import sys
+
+line = (sys.stdin.readline()).strip()
+
+for i in range(3):
+    print(line)
