@@ -1,0 +1,20 @@
+# input: three integers on a single line: x, y, and n
+# output: integers 1 to n in order on its own line, printing "fizz" when the integer is divisible by x, "buzz" when divisible x, and both with "fizzbuzz"
+
+import sys
+
+test_case = sys.stdin.readline()
+x, y, n = test_case.split()
+x = int(x)
+y = int(y)
+n = int(n)
+
+for i in range(1, (n + 1)):
+    if i % x == 0 and i % y == 0:
+        print('FizzBuzz')
+    elif i % x == 0:
+        print('Fizz')
+    elif i % y == 0:
+        print('Buzz')
+    else:
+        print(i)
