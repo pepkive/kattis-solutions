@@ -1,0 +1,15 @@
+# input: n (the number of steel rods she has), folowed by each steel rod's length
+# output: the length of the jumbo javelin Jack can make
+
+import sys
+
+num = (sys.stdin.readline()).strip()
+num = int(num)
+total_length = 0
+
+for i in range(num):
+    line = (sys.stdin.readline()).strip()
+    line = int(line)
+    total_length += line - 1
+
+print(total_length + 1)
