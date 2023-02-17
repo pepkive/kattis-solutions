@@ -1,0 +1,10 @@
+# input: a single integer, n
+# output: the wizard's spell counting from 1 to n, with one "abracadabra" per line
+
+import sys
+
+num = sys.stdin.readline()
+num = int(num)
+
+for i in range(1, num + 1):
+    print(i, 'Abracadabra')
