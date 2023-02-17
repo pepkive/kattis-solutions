@@ -1,0 +1,19 @@
+# input: 6 integers on a single line between 0 and 10. it is the numbers of kings, queens, rooks, bishops, knights and pawns in the set found.
+# output: 6 integers on a single line, the number of pieces that should be removed
+
+import sys
+
+figures = sys.stdin.readline()
+figures = figures.split()
+
+correct = [1, 1, 2, 2, 2, 8]
+
+i = 0
+correction = ''
+
+for item in figures:
+    item = int(item)
+    correction += str((correct[i] - item)) + ' '
+    i += 1
+
+print (correction)
