@@ -1,0 +1,21 @@
+# input: the cost of seed to sow 1 sq meter, the number of lawns to sow, and the lawns' width and length
+# output: the cost to sow all the lawns
+
+import sys
+
+sow_cost = (sys.stdin.readline()).strip()
+sow_cost = float(sow_cost)
+
+lawn_num = (sys.stdin.readline()).strip()
+lawn_num = int(lawn_num)
+
+total_cost = 0
+
+for i in range(lawn_num):
+    lw = (sys.stdin.readline()).strip()
+    l, w = lw.split()
+    l = float(l)
+    w = float(w)
+    total_cost += ((l * w) * sow_cost)
+
+print(total_cost)
